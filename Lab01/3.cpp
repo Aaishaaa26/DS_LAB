@@ -32,6 +32,7 @@ class PlayList{
 			for(int i = 0; i < size; i++){
 				tracks[i] = p.tracks[i];
 			}
+			return *this;
 		}
 		 void display(){
 		 	cout<< "List: \n";
@@ -42,7 +43,7 @@ class PlayList{
 		 }
 		 
 		 void changeTrack(int index, string title){
-		 	if(index > size || index < 0){
+		 	if(index >= size || index < 0){
 		 		return;
 			 }
 			 tracks[index] = title;	 
