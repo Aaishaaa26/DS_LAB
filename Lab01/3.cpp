@@ -47,6 +47,9 @@ class PlayList{
 			 }
 			 tracks[index] = title;	 
 		 }
+         ~PlayList(){
+             delete[] tracks;
+         }
 };
 
 int main(){
